@@ -1,6 +1,7 @@
 describe('Validations Exercice 5: ', () => {
     beforeEach(() => {
         cy.visit("/Exercice5");
+        cy.wait(10000);
     })
     it('Should have label on each input of the form', () => {
         cy.get('form').find('input').each((input) => {
